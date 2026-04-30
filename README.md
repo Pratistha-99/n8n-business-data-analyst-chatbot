@@ -8,6 +8,7 @@ The AI Agent dynamically chooses the most relevant Google Sheets dataset, retrie
 
 <img width="2670" height="1242" alt="Workflow overview" src="https://github.com/user-attachments/assets/63136991-fc8d-4bd8-bd0d-71eaf6c7fc5f" />
 
+**A sample chat conversation on a business theme**
 ```text
 User: Are mobile campaigns performing better than desktop campaigns?
 
