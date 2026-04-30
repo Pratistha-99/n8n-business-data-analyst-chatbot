@@ -40,7 +40,9 @@ Edit Fields
         ↓
 Chat Response
 
-Main Components
+---
+
+## Main Components
 1. Chat Trigger
 The workflow starts when a user sends a message in the n8n chat interface.
 Recommended setting:
@@ -78,7 +80,6 @@ Use this tool to retrieve marketing campaign performance data, including campaig
 The AI Agent uses these descriptions to decide which dataset to retrieve for each user question.
 ![Uploading image.png…]()
 
-
 4. Edit Fields Node
 The AI Agent returns its response inside an output field.
 The Edit Fields node maps that field into a cleaner response field for the final chat response.
@@ -96,11 +97,15 @@ Incorrect:
 Correct:
 {{ $json.response }}
 
-Repository Structure
+---
+
+## Repository Structure
 Recommended project structure:
 n8n-business-data-analyst-chatbot/│├── README.md├── workflow.template.json├── .gitignore│├── sample-data/│   ├── ecommerce-orders.csv│   └── marketing-campaign-performance.csv│└── screenshots/    ├── workflow-overview.png    ├── ai-agent-config.png    ├── google-sheets-tool-config.png    └── chat-response-example.png
 
-Setup Instructions
+---
+
+## Setup Instructions
 1. Clone or Download This Repository
 git clone https://github.com/YOUR_USERNAME/n8n-business-data-analyst-chatbot.gitcd n8n-business-data-analyst-chatbot
 Or download the repository as a ZIP file from GitHub.
@@ -137,7 +142,9 @@ Search the workflow file for placeholders such as:
 YOUR_OPENAI_CREDENTIAL_IDYOUR_OPENAI_CREDENTIAL_NAMEYOUR_GOOGLE_SHEETS_CREDENTIAL_IDYOUR_GOOGLE_SHEETS_CREDENTIAL_NAMEYOUR_ECOMMERCE_GOOGLE_SHEET_IDYOUR_MARKETING_GOOGLE_SHEET_IDYOUR_ECOMMERCE_GOOGLE_SHEET_URLYOUR_MARKETING_GOOGLE_SHEET_URLYOUR_CHAT_TRIGGER_WEBHOOK_IDYOUR_CHAT_RESPONSE_WEBHOOK_IDYOUR_N8N_INSTANCE_IDYOUR_WORKFLOW_IDYOUR_WORKFLOW_VERSION_ID
 Replace them with values from your own n8n environment.
 
-Important Security Disclaimer
+---
+
+## Important Security Disclaimer
 This repository is intended to provide a reusable workflow template.
 The workflow file in this repository should not contain any real API keys, OAuth tokens, refresh tokens, access tokens, private webhook URLs, private Google Sheet links, or personal credentials.
 Before publishing or sharing your own version of this workflow, carefully inspect your exported n8n workflow JSON file and remove or replace any sensitive values.
@@ -161,7 +168,9 @@ Generate a new API key or OAuth credential.
 Update your n8n credential with the new secret.
 Deleting a file from GitHub is not always enough because secrets may remain in Git history.
 
-Sample Datasets
+---
+
+## Sample Datasets
 This repository includes sample datasets that can be copied into Google Sheets.
 E-commerce Orders Dataset
 Useful for analyzing:
@@ -202,7 +211,9 @@ How does the distribution of orders look between men and women using PayPal?
 Example response:
 ## PayPal orders are more common among womenWomen placed 19 PayPal orders, compared with 6 PayPal orders from men.| Gender | PayPal Orders | Share of PayPal Orders ||---|---:|---:|| Women | 19 | 76% || Men | 6 | 24% |**Key insight:** Women account for about three out of every four PayPal orders in this dataset.**Recommendation:** Review PayPal usage by product category and region to understand where this behavior is strongest.
 
-Common Issues and Fixes
+---
+
+## Common Issues and Fixes
 Chat Shows Raw JSON
 Problem:
 The chat displays something like:
@@ -239,7 +250,9 @@ The tool description is too vague.
 The AI Agent prompt does not clearly instruct the agent to retrieve data before answering.
 
 
-Fixes:
+---
+
+## Fixes:
 Reconnect Google Sheets credentials.
 Confirm the correct document and sheet tab.
 Improve the tool description.
@@ -266,7 +279,9 @@ Connect the node to the AI Agent as an AI tool.
 Example tool description:
 Use this tool to retrieve customer support ticket data, including ticket ID, date, customer segment, issue type, priority, status, resolution time, satisfaction score, and assigned team.
 
-Best Practices
+---
+
+## Best Practices
 Keep the AI Agent system prompt dataset-agnostic.
 Put dataset-specific details in each Google Sheets tool description.
 Use clear column names in Google Sheets.
@@ -278,9 +293,9 @@ Use numeric fields for calculations.
 Do not publish real business or customer data.
 Use sample or anonymized datasets for public demos.
 
+---
 
-
-Publishing Notes
+## Publishing Notes
 Before publishing your workflow to GitHub:
 Export the workflow from n8n.
 Rename it to workflow.template.json.
@@ -293,18 +308,21 @@ Review the workflow file manually before committing.
 Recommended .gitignore:
 .env*.envcredentials.json*.key*.pem.DS_Storenode_modules/
 
-License
+---
+
+## License
 Add your preferred license here.
 Common options:
 MIT License
 Apache License 2.0
 GPLv3
 
-
 No license / All rights reserved
 
 
-Disclaimer
+---
+
+## Disclaimer
 This workflow is provided as a learning and demonstration template.
 You are responsible for configuring your own n8n credentials, API keys, Google Sheets access, data permissions, and security settings.
 The workflow does not include real API keys or credentials. Any placeholders in the workflow must be replaced with your own values inside your private n8n environment.
