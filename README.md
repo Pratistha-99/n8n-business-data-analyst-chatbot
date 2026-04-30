@@ -8,6 +8,38 @@ The AI Agent dynamically chooses the most relevant Google Sheets dataset, retrie
 
 <img width="2670" height="1242" alt="Workflow overview" src="https://github.com/user-attachments/assets/63136991-fc8d-4bd8-bd0d-71eaf6c7fc5f" />
 
+```text
+User: Are mobile campaigns performing better than desktop campaigns?
+
+Agent: To compare mobile campaigns vs desktop campaigns, I analyzed key performance metrics aggregated by device type:
+
+Mobile Campaigns (20 campaigns):
+Average Spend: $1,440
+Average Impressions: 96,700
+Average Clicks: 4,171
+Average Conversions: 173
+Average Revenue: $17,330
+Average Bounce Rate: 0.44
+Average Session Duration: 91 seconds
+Desktop Campaigns (18 campaigns):
+Average Spend: $1,936
+Average Impressions: 39,889
+Average Clicks: 1,660
+Average Conversions: 108
+Average Revenue: $20,541
+Average Bounce Rate: 0.31
+Average Session Duration: 139 seconds
+Insights:
+
+Mobile campaigns reach more impressions and gain higher clicks and conversions on average.
+Desktop campaigns spend more on average but generate slightly higher revenue.
+Desktop campaigns have better engagement metrics with lower bounce rates and longer average session duration.
+Mobile campaigns perform well on volume metrics, while desktop campaigns perform better on engagement and revenue per campaign.
+Summary: Mobile campaigns are stronger in terms of reach, clicks, and conversions, indicating better volume and top-of-funnel performance. Desktop campaigns show better engagement and higher revenue efficiency despite lower impressions and click volumes.
+
+Recommendation: Use mobile campaigns for broad awareness and acquisition efforts, and leverage desktop campaigns for deeper engagement and revenue-focused objectives. Optimizing spend distribution across devices based on campaign goals will likely improve overall marketing ROI.
+```
+
 
 <img width="1394" height="795" alt="image" src="https://github.com/user-attachments/assets/aaab5729-a8c4-48b7-98b3-2dc1e508f456" />
 
